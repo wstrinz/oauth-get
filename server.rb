@@ -34,7 +34,8 @@ configure do
 end
 
 get '/' do
-  "Render template wot has buttons for enabled strategies"
+  @strategies_list = StrategyDSL.strategies.keys
+  haml :strategies
 end
 
 get '/show/:provider' do

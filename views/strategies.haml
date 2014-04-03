@@ -1,0 +1,4 @@
+%h1 Strategies
+- @strategies_list.each do |s|
+  %form{method: "link", action: "/auth/#{s}"}
+    %input{type: "submit", value: "#{s}", style: "font-size: 1em"}

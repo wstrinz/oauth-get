@@ -3,12 +3,9 @@ GEM
   specs:
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
+    haml (4.0.5)
+      tilt
     hashie (2.0.5)
-    httparty (0.11.0)
-      multi_json (~> 1.0)
-      multi_xml (>= 0.5.2)
-    jawbone (0.4)
-      httparty (~> 0.11.0)
     jwt (0.1.11)
       multi_json (>= 1.5)
     multi_json (1.9.2)
@@ -44,7 +41,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jawbone
+  haml
   omniauth
   omniauth-jawbone
   sinatra
